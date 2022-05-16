@@ -79,5 +79,4 @@ Config.Walks = {
 Language = {
     ['invalid_style'] = 'Invalid walking style, see /'..Config.walkListCommand..' for styles.',
     ['invalid_usage'] = 'Invalid command usage.',
-
 }
