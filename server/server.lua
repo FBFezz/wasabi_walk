@@ -4,6 +4,7 @@ TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 RegisterServerEvent('wasabi_walk:loadWalk')
 AddEventHandler('wasabi_walk:loadWalk', function()
+    local source = source
     local xPlayer = ESX.GetPlayerFromId(source)
     local identifier = xPlayer.identifier
     local rawData = LoadResourceFile(GetCurrentResourceName(), "./data.json")
@@ -15,6 +16,7 @@ end)
 
 RegisterServerEvent('wasabi_walk:saveWalk')
 AddEventHandler('wasabi_walk:saveWalk', function(walk)
+    local source = source
     local xPlayer = ESX.GetPlayerFromId(source)
     local identifier = xPlayer.identifier
     local rawData = LoadResourceFile(GetCurrentResourceName(), "./data.json")
